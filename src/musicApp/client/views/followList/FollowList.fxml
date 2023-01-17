@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="715.0" prefWidth="240.0" stylesheets="@FollowList.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicApp.client.views.followList.FollowListController">
+   <children>
+      <VBox layoutX="-8.0" layoutY="-3.0" prefHeight="720.0" prefWidth="250.0" styleClass="item">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="715.0" prefWidth="250.0" styleClass="item" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="contactsLayout" prefHeight="715.0" prefWidth="250.0" styleClass="item">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="99.0" prefWidth="250.0" styleClass="item">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="62.0" prefWidth="128.0" text="FollowList" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="34.0" fitWidth="35.0">
+                                 <image>
+                                    <Image url="@conference-xxl.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
